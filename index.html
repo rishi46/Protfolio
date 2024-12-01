@@ -10,18 +10,18 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Rushikesh Gaikwad</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#custom-projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Rushikesh Gaikwad</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -36,18 +36,18 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+    <section id="profile" style="display: flex; flex-wrap: wrap; margin-left: 0%; margin-right: 0%;">
+      <div class="section__pic-container-main-screen">
+        <img class="section__pic-container" src="./assets/profile-pic.png" alt="Rushikesh Gaikwad profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Rushikesh Gaikwad</h1>
+        <p class="section__text__p2">Mobile Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/resume.pdf')"
           >
             Download CV
           </button>
@@ -59,7 +59,7 @@
           <img
             src="/assets/linkedin.png"
             class="icon"
-            onclick="location.href='https://linkedin.com/';"
+            onclick="location.href='https://www.linkedin.com/in/rushigaikwad/';"
             alt=""
           />
           <img
@@ -71,9 +71,11 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+    <section id="about" style="flex-direction: column; flex-wrap: wrap; margin-left: 10%; margin-right: 10%;">
+      <div style="display: flex; flex-direction: column;">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+      </div>
       <div class="section-container">
         <div class="section__pic-container">
           <img
@@ -82,7 +84,7 @@
             alt="Profile Picture"
           />
         </div>
-        <div class="about-details-container">
+        <div class="about-details-container" style="justify-content: center;">
           <div class="about-containers">
             <div class="details-container">
               <img
@@ -91,7 +93,7 @@
                 alt="Experience icon"
               />
               <h3>Experience</h3>
-              <p>2+ years<br />Frontend Development</p>
+              <p>2+ years<br />Mobile Development</p>
             </div>
             <div class="details-container">
               <img
@@ -100,20 +102,16 @@
                 alt="Experience icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>Bachelor of Engineering (BE)<br />from Vidyavardhini's College of Engineering and Technology, Mumbai</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim,
-              iusto. Praesentium blanditiis corporis reiciendis ipsum quasi
-              earum aut nulla rerum ab eum veritatis unde fugiat repellendus
-              beatae ducimus minus autem aspernatur doloremque incidunt quia,
-              vitae laborum ex. Dolor aut, nostrum porro veritatis optio,
-              facilis vel ea repudiandae eligendi mollitia, ipsam corporis
-              sapiente! Quas, asperiores consequatur at dignissimos doloribus
-              tempore exercitationem. Sed laboriosam, optio aliquam natus
-              cupiditate ullam.
+              With 2+ years of experience in building hybrid mobile applications, 
+              I have skills in end to end React native and Flutter app development from requirement refinement to Play Store and App Store release management. 
+              I’ve developed 2 React Native and 1 Flutter apps from scratch and significantly contributed to 3 more apps, 
+              focusing on performance optimisation & mobile app security. 
+              In future I would like to continue honing my skills and deliver value.
             </p>
           </div>
         </div>
@@ -125,24 +123,28 @@
         alt=""
       />
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+    <div class="space-between"></div>
+    <section id="experience" style="margin-bottom: 2rem;">
+      <div style="display: flex; flex-direction: column; flex: 1; align-items: center;">
+        <p class="section__text_TY_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+      </div>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title"></h2>
             <div class="article-container">
-              <article>
+              <article >
                 <img
                   class="icon"
                   src="/assets/checkmark.png"
                   alt="Experience icon"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3>React Native</h3>
                   <p>Experienced</p>
                 </div>
+              </article>
               </article>
               <article>
                 <img
@@ -151,18 +153,7 @@
                   alt="Experience icon"
                 />
                 <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>SASS</h3>
+                  <h3>Redux</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -174,7 +165,7 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -195,15 +186,10 @@
                   alt="Experience icon"
                 />
                 <div>
-                  <h3>Material UI</h3>
+                  <h3>React Hook</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
               <article>
                 <img
                   class="icon"
@@ -211,7 +197,29 @@
                   alt="Experience icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
+                  <h3>React Dev Tools</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -222,7 +230,7 @@
                   alt="Experience icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>Dart</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -233,7 +241,7 @@
                   alt="Experience icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
+                  <h3>Getx</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -244,7 +252,63 @@
                   alt="Experience icon"
                 />
                 <div>
-                  <h3>Git</h3>
+                  <h3>Git, Git Hub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>HTML5</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Release on App Store and Play Store</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article 
+              >
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Android Security Issues</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -259,92 +323,139 @@
         alt=""
       />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-1.png"
-                alt="project-1"
-              />
+    <section id="custom-projects" class="space-between-project-section">
+      <div style="display: flex; flex-direction: column; flex: 1; align-items: center;">
+
+      <p class="custom-section__text__p1">Browse My Recent</p>
+      <h1 class="custom-title">Projects</h1>
+      </div>
+      
+      <div class="custom-experience-details-container" style="margin-bottom: 0rem; display: flex;">
+        <div class="custom-about-containers-scroll" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+          <div class="custom-details-container">
+            <div class="custom-article-container">
+              <img class="custom-project-img" src="/assets/FAZOR®_STAR_Club.jpg" alt="FAZOR® STAR Club" />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/';"
+              <a
+                href="https://play.google.com/store/apps/details?id=com.fazor&hl=en&pli=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="custom-project-link"
               >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://linkedin.com/';"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-2.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/';"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://linkedin.com/';"
-              >
-                Live Demo
-              </button>
+                  <h2 class="custom-project-title linkColor">FAZOR® STAR Club</h2>
+              </a>
+            <div class="custom-text-container">
+              <p style="text-align: start;">The FAZOR® STAR Club is a multi-role application designed for FAZOR® STAR users, 
+                offering exclusive access to a technical community and tools to enhance treatment efficiency. 
+                Users can create plots for potato tracking, receive next week's weather forecasts, 
+                and make informed decisions to optimize their potato harvesting and calibration. 
+                Accessible from your smartphone, the app provides resources to expand technical knowledge, 
+                collaborate with other users, and share experiences. 
+                It’s free to use with no commitment, helping users maximize treatment results and reduce costs.</p>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-3.png"
-                alt="project-1"
-              />
+          <div class="custom-details-container">
+            <div class="custom-article-container">
+              <img class="custom-project-img" src="/assets/samridhi.png" alt="Samridhi" />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/';"
+              <a
+              href="https://play.google.com/store/apps/details?id=com.advanta.samridhi&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="custom-project-link"
               >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://linkedin.com/';"
+                <h2 class="custom-project-title linkColor">Samridhi</h2>
+              </a>  
+            <div class="custom-text-container">
+              <p style="text-align: start;">
+                Advanta Samridhi is a multirole application that has world class hybrids in different 
+                crop portfolios – Corn, Rice, Mustard, Pearl Millet, Sunflower, Grain Sorghum, etc. 
+                The app provides functionality to scan the QR codes and earn loyalty points</p>
+            </div>
+          </div>
+          <div class="custom-details-container">
+            <div class="custom-article-container">
+              <a
+                href="https://apps.apple.com/au/app/silokeeper/id1616511053"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="custom-project-link"
               >
-                Live Demo
-              </button>
+                <img class="custom-project-img" src="/assets/silokeeper.jpg" alt="silokeeper" />
+              </a>
+            </div>
+            <h2 class="custom-project-title linkColor">Silokeeper</h2>
+            <div class="custom-text-container">
+              <p style="text-align: start;">
+                SiloKeeper helps to ensure the critical success factors 
+                for effective fumigation are adhered to – right dosage, 
+                correct exposure time, airtight enclosures, 
+                temperature and humidity inside enclosures, 
+                and the right air distribution and ventilation.</p>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="/assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-        alt=""
-      />
     </section>
+    <!-- <section style="background-color: red; height: 23rem;"></section> -->
+    <section id="custom-other-projects" class="space-between-project-section">
+      <div class="custom-experience-details-container" style="margin-bottom: 10rem; display: flex;">
+        <div class="custom-about-containers-scroll" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+          <div class="custom-details-container">
+            <div class="custom-article-container">
+              <img class="custom-project-img" src="/assets/d360.png" alt="Distributor 360" />
+            </div>
+                  <h2 class="custom-project-title">Distributor 360</h2>
+            <div class="custom-text-container">
+              <p style="text-align: start;">
+                The Distributor 360 (D360) application is a robust platform designed to monitor and enhance 
+                distributor performance. It provides real-time insights into sales, credit utilization, 
+                and opportunities for cross-sales and churn risk management. With detailed data visualizations, 
+                users can track top-selling products, manage inventory, and analyze wallet share. 
+                The app's user-friendly dashboard and secure login make it an essential tool for 
+                optimizing distributor operations and driving business growth.
+              </p>
+            </div>
+          </div>
+          <div class="custom-details-container">
+            <div class="custom-article-container">
+              <img class="custom-project-img" src="/assets/upulse.png" alt="Upulse" />
+            </div>
+                <h2 class="custom-project-title">Upulse</h2>  
+            <div class="custom-text-container">
+              <p style="text-align: start;">
+                The UPulse application is a comprehensive platform designed for users to manage 
+                and monitor various business metrics, particularly in sales, collections, returns, and 
+                overdue data. It offers a user-friendly interface with options for both light and dark modes, 
+                and features secure login methods, including AD and OTP-based authentication.</p>
+            </div>
+          </div>
+          <div class="custom-details-container">
+            <div class="custom-article-container">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.advanta.tungga&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="custom-project-link"
+              >
+                <img class="custom-project-img" src="/assets/tungga.jpg" alt="Tungga" />
+              </a>
+            </div>
+            <h2 class="custom-project-title linkColor">Tungga</h2>
+            <div class="custom-text-container">
+              <p style="text-align: start;">
+                The Tungga application revolutionizes loyalty programs by offering a modern and engaging 
+                platform for channel partners. Each seed bag is equipped with a unique QR code that, 
+                when scanned using the Tungga app, rewards partners with loyalty points. 
+                This innovative approach incentivizes partners, fostering long-term collaboration and success. 
+                By replacing outdated loyalty systems, Tungga empowers businesses to strengthen relationships with their 
+                partners, driving increased sales and sustained growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <p class="section__text__p1">Get In Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -355,15 +466,15 @@
             class="icon contact-icon"
             alt="Email icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@email.com</a></p>
+          <p><a href="mailto:rushi.n.gaikwad@gmil.com">Example@email.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
-            src="/assets/email.png"
+            src="/assets/linkdin.png"
             class="icon contact-icon"
             alt="Email icon"
           />
-          <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+          <p><a href="https://linkedin.com/in/rushigaikwad">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -378,7 +489,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved</p>
+      <p>Copyright &#169; 2023 Rushikesh Gaikwad. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
   </body>

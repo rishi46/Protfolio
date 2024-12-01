@@ -18,6 +18,7 @@ html {
 p,
 .experience-sub-title {
   color: rgb(85, 85, 85);
+  font-size: large;
 }
 
 /* FLEXED ELEMENTS */
@@ -54,6 +55,7 @@ nav,
 .nav-links,
 .about-containers {
   gap: 2rem;
+  padding-top: 1.5rem;
 }
 
 #contact,
@@ -71,6 +73,9 @@ nav,
 .about-details-container,
 .experience-details-container {
   flex-direction: column;
+  margin-bottom: 10%;
+  margin-top: 1rem;
+
 }
 
 /* NAVBAR */
@@ -129,13 +134,22 @@ section {
   gap: 4rem;
 }
 
+.space-between {
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.space-between-project-section {
+  margin-bottom: 35rem;
+}
+
 .section-container,
 .experience-details-container {
   height: 80%;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 3rem; 
 }
 
 .btn,
@@ -173,6 +187,7 @@ a,
 .details-container,
 .project-img {
   border-radius: 2rem;
+  
 }
 
 .btn-color-1,
@@ -208,6 +223,7 @@ a,
 
 #socials-container,
 .btn-container {
+  margin-top: 1rem;
   gap: 1rem;
 }
 
@@ -220,18 +236,37 @@ a,
 
 .section__text {
   align-self: center;
+  height: 18rem;
+  align-items: center;
+  align-content: space-around;
 }
 
 .experience-sub-title,
 .section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2vw, 1.75rem);
 }
 
 .section__pic-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.section__pic-container-main-screen {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden;   /* Ensures the image does not overflow the circular container */
+  display: flex;      /* Centers the image inside the container */
+  justify-content: center;
+  align-items: center;
+}
+
+.section__pic-container {
+  height: 100%; /* Ensures the image covers the container */
+  width: 100%;  /* Adjusts the image size to match the container */
+  object-fit: cover; /* Keeps the aspect ratio of the image */
 }
 
 #socials-container {
@@ -267,7 +302,7 @@ a,
   bottom: 2.5rem;
 }
 
-/* EXPERIENCE SECTIION */
+/* EXPERIENCE SECTION */
 
 .article-container {
   text-align: initial;
@@ -277,7 +312,7 @@ a,
 }
 
 article {
-  width: 10rem;
+  width: 12.8rem;
 }
 
 /* PROJECTS SECTION */
@@ -301,7 +336,7 @@ article {
 }
 
 #contact {
-  height: 70vh;
+  height: 50vh;
 }
 
 .contact-info-container,
@@ -410,3 +445,161 @@ footer {
 .hamburger-icon span:last-child {
   transform: none;
 }
+
+.details-container-scroll {
+  display: flex; /* To arrange the project cards in a row */
+  gap: 20px; /* Adds space between each project */
+  overflow-x: scroll; /* Enables horizontal scrolling with the scrollbar always visible */
+  padding: 10px; /* Optional: Adds padding around the scrollable area */
+  scroll-snap-type: x mandatory; /* Enables smooth snapping to items */
+  scrollbar-width: thin; /* For Firefox: makes the scrollbar thinner */
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.about-containers-scroll {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap; /* Ensures the items do not wrap to the next line */
+  gap: 20px; /* Adds space between each project */
+}
+
+.color-container-scroll {
+  flex: 0 0 auto; /* Ensures each project card maintains its width */
+  width: 300px; /* Adjust the card width as needed */
+  scroll-snap-align: start; /* Ensures smooth alignment when scrolling */
+}
+
+
+#custom-projects.custom-projects {
+  padding: 4rem 0; /* Add padding at the top and bottom */
+  background-color: #f4f4f4; /* Optional: set background color */
+}
+
+.custom-title {
+  font-size: 2.5rem; /* Title size */
+  text-align: center;
+  margin-bottom: 2rem; /* Space below the title */
+}
+
+.custom-section__text__p1 {
+  font-size: 1.5rem; /* Size for introductory text */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.custom-experience-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add space between project cards */
+}
+
+.custom-details-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 13px 48px -3px rgba(0,0,0,0.2);
+  width: 300px; /* Fixed card width */
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-article-container {
+  width: 100%;
+  height: auto;
+}
+
+.custom-project-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.custom-project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-text-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.custom-btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.custom-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+}
+
+.custom-icon.custom-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-experience-details-container {
+    justify-content: center;
+  }
+
+  .custom-details-container {
+    width: 45%; /* Adjust card width to 45% on tablets */
+  }
+
+  .custom-title {
+    font-size: 2rem; /* Smaller font size on smaller screens */
+  }
+
+  .custom-section__text__p1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-experience-details-container {
+    justify-content: center;
+  }
+
+  .custom-details-container {
+    width: 90%; /* Adjust card width to 90% on mobile */
+  }
+
+  .custom-title {
+    font-size: 1.8rem;
+  }
+
+  .custom-section__text__p1 {
+    font-size: 1rem;
+  }
+}
+
+
+.linkColor{
+  color: #0000EE
+}
+
+
+
+
