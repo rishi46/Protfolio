@@ -63,6 +63,19 @@
   }
 }
 
+
+@media screen and (max-width: 900px) {
+  .space-between-project-section{
+    margin-bottom: 0rem;
+  }
+  .space-between{
+    margin-bottom: 0rem;
+  }
+  .space-between-project-section{
+      margin-bottom: 0rem;    
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -135,3 +148,12 @@
     margin-bottom:0rem;
   }
 }
+
+
+@media screen and (max-width: 400px) {
+  .about{
+    margin-top: 13rem;
+  }
+}
+
+
